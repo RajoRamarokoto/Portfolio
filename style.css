@@ -341,6 +341,9 @@ section .title::after{
 .skills .skills-content .right .mysql::before{
     width: 60%;
 }
+.skills .skills-content .right .wincc::before{
+    width: 60%;
+}
 
 /* teams section styling */
 .teams .title::after{
