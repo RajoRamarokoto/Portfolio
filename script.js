@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     //typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Control System Engineer", "Designer", "Developer", "Freelancer"],
+        strings: ["Control System Engineer", "Project Designer", "Developer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Control System Engineer", "Designer", "Developer", "Freelancer"],
+        strings: ["Control System Engineer", "Project Designer", "Developer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
