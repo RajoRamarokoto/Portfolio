@@ -1,0 +1,9 @@
+<If>
+  <Comp operator="EQ">
+    <Tag value="32TIC0509/PID_S.QMAN_AUT"/>
+    <Static value="Auto"/>
+  </Comp>
+  <Static value="Automatic"/>
+  <Static value="Manual"/>
+</IF>
+  

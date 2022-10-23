@@ -284,6 +284,26 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.skills .skills-content .left .work{
+    font-size: 20px;
+    text-align: left;
+    color: crimson;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.skills .skills-content .left .year{
+    font-size: 15px;
+    text-align: right;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.skills .skills-content .left .desc{
+    font-size: 15px;
+    text-align: left;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+#more {display: none;}
 .skills .skills-content .left p{
     text-align: justify;
 }
@@ -331,10 +351,10 @@ section .title::after{
     background: crimson;
 }
 .skills .skills-content .right .html::before{
-    width: 90%;
+    width: 95%;
 }
 .skills .skills-content .right .css::before{
-    width: 99%;
+    width: 100%;
 }
 .skills .skills-content .right .js::before{
     width: 90%;
@@ -348,7 +368,15 @@ section .title::after{
 .skills .skills-content .right .wincc::before{
     width: 60%;
 }
-
+.skills .skills-content .right .wiring::before{
+    width: 100%;
+}
+.skills .skills-content .right .panel::before{
+    width: 100%;
+}
+.skills .skills-content .right .solving::before{
+    width: 100%;
+}
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
