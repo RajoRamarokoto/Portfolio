@@ -63,18 +63,11 @@ $(document).ready(function(){
         }
     });
 });
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+// Add click event to all list togggles 
+$(".list-toggle").click(function() {
+
+    // Move up DOM tree to nearest list
+    // Toggle collapsed and expanded classes
+    $(this).closest("ul").toggleClass("collapsed").toggleClass("expanded");
   
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-  }
+  });

@@ -286,27 +286,52 @@ section .title::after{
 }
 .skills .skills-content .left .work{
     font-size: 20px;
+    width: 60%;
     text-align: left;
+    padding: 0px;
     color: crimson;
     font-weight: 600;
-    margin-bottom: 5px;
 }
 .skills .skills-content .left .year{
     font-size: 15px;
+    padding: 15px;
     text-align: right;
     font-weight: 600;
-    margin-bottom: 5px;
 }
-.skills .skills-content .left .desc{
+.skills .skills-content .left .location{
     font-size: 15px;
+    font-weight: 600;
     text-align: left;
-    font-weight: 200;
     margin-bottom: 5px;
 }
-#more {display: none;}
-.skills .skills-content .left p{
-    text-align: justify;
+.skills .skills-content .left .sigle{
+    padding-left: 80px;
+    height: 10px;
+    width: 900px;
 }
+ul.collapsed > li:nth-child(n+2) {
+    display: none;
+  }
+  
+  ul.collapsed > .list-toggle > span.collapse, ul.expanded > .list-toggle > span.expand {
+    display: none;
+  }
+  
+  .list-toggle {
+    text-align: center;
+    width: 90px;
+    border-radius: 10%;
+    border-width: 6px;
+    border-color: black;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+  }
+  
+  ul.expanded > .list-toggle {
+    background: white;
+    color: crimson;
+  }
 .skills .skills-content .left a{
     display: inline-block;
     background: crimson;
