@@ -387,6 +387,9 @@ ul.collapsed > li:nth-child(n+2) {
 .skills .skills-content .right .py::before{
     width: 95%;
 }
+.skills .skills-content .right .script::before{
+    width: 85%;
+}
 .skills .skills-content .right .mysql::before{
     width: 60%;
 }
