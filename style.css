@@ -686,3 +686,15 @@ footer span a:hover{
         font-size: 28px;
     }
 }
+.field.textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.message-textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    resize: none; /* Prevent resizing */
+}
