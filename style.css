@@ -693,8 +693,11 @@ footer span a:hover{
 }
 
 .message-textarea {
-    width: 100%;
+    width: 105%;
     height: 100%;
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    border: 1px solid lightgrey;
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    padding: 0px;
     resize: none; /* Prevent resizing */
 }
