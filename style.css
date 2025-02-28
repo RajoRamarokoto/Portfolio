@@ -492,7 +492,7 @@ ul.collapsed > li:nth-child(n+2) {
 }
 /* teams section styling */
 .teams .title::after{
-    content: "who is with me";
+    content: "Meet my team";
 }
 .teams .carousel .card{
     background: #222;
