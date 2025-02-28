@@ -321,8 +321,6 @@ ul.collapsed > li:nth-child(n+2) {
     text-align: center;
     width: 90px;
     border-radius: 10%;
-    border-width: 6px;
-    border-color: black;
     background: crimson;
     color: white;
     cursor: pointer;
@@ -330,6 +328,8 @@ ul.collapsed > li:nth-child(n+2) {
   
   ul.expanded > .list-toggle {
     background: white;
+    border-radius: 10%;
+    border: 2px solid crimson;
     color: crimson;
   }
 .skills .skills-content .left a{
