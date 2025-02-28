@@ -2,12 +2,12 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");    
         }
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
@@ -17,20 +17,18 @@ $(document).ready(function(){
         $('html').animate({scrollTop: 0});
     });
 
-
-    // toggle menu/navbar script/
+    // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    //typing animation script
+    // typing animation script
     var typed = new Typed(".typing", {
         strings: ["Control System Engineer", "Project Designer", "Developer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-
     });
 
     var typed = new Typed(".typing-2", {
@@ -38,7 +36,6 @@ $(document).ready(function(){
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-
     });
 
     // owl carousel script
@@ -62,42 +59,41 @@ $(document).ready(function(){
             }
         }
     });
-});
-// Add click event to all list togggles 
-$(".list-toggle").click(function() {
 
-    // Move up DOM tree to nearest list
-    // Toggle collapsed and expanded classes
-    $(this).closest("ul").toggleClass("collapsed").toggleClass("expanded");
-  
-  });
+    // Add click event to all list toggles 
+    $(".list-toggle").click(function() {
+        // Move up DOM tree to nearest list
+        // Toggle collapsed and expanded classes
+        $(this).closest("ul").toggleClass("collapsed").toggleClass("expanded");
+    });
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-    var form = event.target;
-    var formData = new FormData(form);
+        var form = event.target;
+        var formData = new FormData(form);
 
-    fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            form.reset(); // Reset the form
-            document.getElementById('form-message').style.display = 'block'; // Show the success message
-        } else {
-            response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                    alert(data["errors"].map(error => error["message"]).join(", "));
-                } else {
-                    alert("Oops! There was a problem submitting your form");
-                }
-            });
-        }
-    }).catch(error => {
-        alert("Oops! There was a problem submitting your form");
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                form.reset(); // Reset the form
+                document.getElementById('form-message').style.display = 'block'; // Show the success message
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data["errors"].map(error => error["message"]).join(", "));
+                    } else {
+                        alert("Oops! There was a problem submitting your form");
+                    }
+                });
+            }
+        }).catch(error => {
+            alert("Oops! There was a problem submitting your form");
+        });
     });
 });

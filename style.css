@@ -348,6 +348,21 @@ ul.collapsed > li:nth-child(n+2) {
     color: crimson;
     background: none;
 }
+.skills .skills-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .Skills_Title{
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    color: crimson;
+    margin-bottom: 20px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
 .skills .skills-content .right .bars{
     margin-bottom: 25px;
 }
@@ -404,6 +419,76 @@ ul.collapsed > li:nth-child(n+2) {
 }
 .skills .skills-content .right .solving::before{
     width: 100%;
+}
+/* Tooltip container */
+.Skills_Title {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.Skills_Title::after {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    width: 600px;
+    background-color: crimson;
+    color: white;
+    text-align: left;
+    font-family: 'open sans', sans-serif;
+    font-size: 14px;
+    border-radius: 6px;
+    border-color: black;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 10%; /* Position the tooltip above the text */
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+/*.Skills_Title::before {
+    content: "tosdfs";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering */
+.Skills_Title:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Media queries for responsive tooltip */
+@media (max-width: 1200px) {
+    .Skills_Title::after {
+        width: 350px;
+        left: 50%;
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Skills_Title::after {
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Skills_Title::after {
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+    }
 }
 /* teams section styling */
 .teams .title::after{
